@@ -5,28 +5,23 @@
 
 # Microsoft Azure IoT SDKs
 
-This repository references Microsoft Azure IoT device SDKs and IoT service SDKs. Device SDKs enable you connect client devices to Azure IoT Hub. Service SDKs enable you to manage your IoT Hub service instance.
+This repository serves as a landing page for all Azure IoT SDKs, each being maintained in their own repository, including sample code and documentation.  Visit [this page](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks) to learn more about Azure IoT SDKs.
 
 Visit http://azure.com/iotdev to learn more about developing applications for Azure IoT.
 
 ## Microsoft Azure IoT SDKs
 
-The Microsoft Azure IoT **Device** SDKs contain code that facilitate building devices and applications that connect to and are managed by Azure IoT Hub services.
-The Microsoft Azure IoT **Service** SDKs help you to build applications that interact with your devices and manage device identities in your IoT hub.
-
-Devices and data sources in an IoT solution can range from a simple network-connected sensor to a powerful, standalone computing device. Devices may have limited processing capability, memory, communication bandwidth, and communication protocol support. The IoT device SDKs enable you to implement client applications for a wide variety of devices.
-
-This repository serves as a landing page for all SDKs, each being actually maintained in their own repository, including sample code and documentation:
-
-- [Azure IoT SDK for C](https://github.com/azure/azure-iot-sdk-c)
-- [Azure IoT SDK for Python](https://github.com/azure/azure-iot-sdk-python)
-- [Azure IoT SDK for Node.js](https://github.com/azure/azure-iot-sdk-node)
-- [Azure IoT SDK for Java](https://github.com/azure/azure-iot-sdk-java)
-- [Azure IoT SDK for .NET](https://github.com/azure/azure-iot-sdk-csharp)
+Microsoft Azure IoT SDKs for Azure IoT Hub and Azure IoT Hub Device Provisioning Service:
+- [Azure IoT SDK for Embedded C](https://github.com/Azure/azure-sdk-for-c/tree/master/sdk/docs/iot) is an alternative for **constrained devices** which enables the BYO (bring your own) network approach: IoT developers have the freedom of choice to bring MQTT client, TLS and Socket of their choice to create a device solution
+- [Azure IoT SDK for C](https://github.com/Azure/azure-iot-sdk-c) written in ANSI C (C99) for portability and broad platform compatibility. There are two device client libraries for C, the low-level iothub_ll_client and the iothub_client (threaded).
+- [Azure IoT SDK for Python](https://github.com/Azure/azure-iot-sdk-python)
+- [Azure IoT SDK for Node.js](https://github.com/Azure/azure-iot-sdk-node)
+- [Azure IoT SDK for Java](https://github.com/Azure/azure-iot-sdk-java)
+- [Azure IoT SDK for .NET](https://github.com/Azure/azure-iot-sdk-csharp)
 
 ### OS platforms and hardware compatibility
 
-See individual languages repositories for details.
+See individual repositories for details.
 
 You can find an exhaustive list of the OS platforms the various SDKs have been tested against in the [Azure Certified for IoT device catalog](https://catalog.azureiotsuite.com/). Note that you might still be able to use the SDKs on OS and hardware platforms that are not listed on this page: all the SDKs are open sourced and designed to be portable. If you have suggestions, feedback or issues to report, refer to the Contribution and Support sections below.
 
@@ -46,3 +41,14 @@ Here is what you can expect Microsoft Support to be able to help with:
 * **REST/API Issues**: Using the IoT Hub REST/APIs that are documented in the [documentation]( https://msdn.microsoft.com/library/mt548492.aspx).
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Long Term Support
+
+The project offers a Long Term Support (LTS) version to allow users that do not need the latest features to be shielded from unwanted changes.
+
+A new LTS version will be created every 6 months. The lifetime of an LTS branch is currently planned for one year. LTS branches receive all bug fixes that fall in one of these categories:
+
+- security bugfixes
+- critical bugfixes (crashes, memory leaks, etc.)
+
+Please see each language repo for details.
